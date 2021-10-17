@@ -1,0 +1,922 @@
+
+//1,2,3,4,5,7,8
+/*Call Fonts*/
+@font-face{
+    font-family:"Agatha";
+    src:url("../fonts/Agatha.ttf");
+}
+
+/* public */
+img{
+    width:100%;
+}
+ul{
+    padding:0;
+    margin:0;
+    list-style: none;
+}
+a{
+text-decoration: none;
+color:black;
+}
+a:hover{
+    color:black;
+    text-decoration: none;
+}
+body{
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+     position: relative;
+    overflow-x: hidden;
+    color:#121212;
+}
+.headerImg{
+    background-image: url("../images/headet.png");
+    height:780px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    position: relative;
+    padding-top:200px;
+}
+.logo{
+    width:100px;
+    margin:auto
+}
+.LogoContainer{
+    text-align: center;
+}
+.LogoContainer h1{
+    font-family:"Agatha";
+    font-size:5.625em;
+    color:white;
+    margin-top:30px;
+}
+
+/*******Header ****************/
+header{
+    box-shadow: 0 3px 16px #00000029;
+    z-index: 66666666666;
+    position: relative;
+}
+/********Navbar**********/
+.navbar-brand{ 
+     font-size: 40px;;
+     font-family:"Agatha";
+     color:#121212;
+}
+.navbar-brand span{
+    color:#DC5B81;
+}
+.navbar{
+    width:100%;
+    padding-left:0;
+}
+.nav-item{
+    padding-left:25px;
+    padding-right:25px;
+}
+.navbar-expand-lg .navbar-nav .nav-link{
+    font-family: 'Poppins', sans-serif;
+        font-size:1.250em;
+    color:#121212;
+    position: relative;
+padding:0
+}
+
+.navbar-expand-lg .navbar-nav .nav-link.active{
+    color:#DC5B81;
+}
+
+button.navbar-toggler {
+    position: relative;
+    border: none;
+    height: 40px;
+    cursor: pointer;
+    border-radius: 0;
+    opacity: 1;
+    border:1px solid #DC5B81;
+    text-align: center;
+    width:50px;
+    
+
+}
+button.navbar-toggler i {
+    background-color: #DC5B81;
+    border-radius: 2px;
+    content: '';
+    display: block;
+    width: 100%;
+    height: 3px;
+    animation: nav2 0.8s backwards;
+    animation-direction: reverse;
+    margin-bottom:5px;
+}
+button.navbar-toggler i:nth-child(2) {
+    margin: 5px 0;
+    -webkit-animation: nav1 0.8s backwards;
+    animation: nav1 0.8s backwards;
+    -webkit-animation-direction: reverse;
+    animation-direction: reverse;}
+.mobileMenu i:nth-child(3) {
+        -webkit-animation: nav3 0.8s backwards;
+        animation: nav3 0.8s backwards;
+        -webkit-animation-direction: reverse;
+        animation-direction: reverse;
+    }
+.scrollNav {
+        top: 0 !important;
+        z-index: 99999999999999999999999;
+        animation-duration: .5s;
+        background:white;
+        position: fixed !important;
+        box-shadow: rgba(0, 0, 0, 0.1) 2px 3px 20px 3px;
+        transition: 1s all;
+        left: 0;
+        width:100%;
+        right:0;
+        padding:5px 0;
+        transition: all .5s;;
+        animation:sticky;
+    }
+    /*--------------- Section ----------*/
+    section {
+        padding-top:90px;
+        padding-bottom:100px;
+    }
+.sectionTitle{
+    margin-bottom: 70px;
+
+}
+.sectionTitle .para{
+    font-size: 16px;
+    color: #A5A5A5;
+    margin-top: 25px;
+}
+    .sectionTitle h3{
+        color:#DC5B81;
+        font-size: 2.250em;
+        display: inline-block;
+    }
+    .titleImg{
+        width:290px;
+    }
+
+/****************Animation of mobile Toggler****************/
+@-webkit-keyframes nav1 {
+    50% {
+      -webkit-transform: rotate(0deg); }
+    100% {
+      -webkit-transform: rotate(45deg); } }
+  @keyframes nav1 {
+    50% {
+      transform: rotate(0deg); }
+    100% {
+      transform: rotate(45deg); } }
+
+  @-webkit-keyframes nav2 {
+    0% {
+      -webkit-transform: translateY(0px) rotate(0deg); }
+    50% {
+      -webkit-transform: translateY(9px) rotate(0deg); }
+    100% {
+      -webkit-transform: translateY(9px) rotate(135deg); } }
+  @keyframes nav2 {
+    0% {
+      transform: translateY(0px) rotate(0deg); }
+    50% {
+      transform: translateY(9px) rotate(0deg); }
+    100% {
+      transform: translateY(9px) rotate(135deg); } }
+  @-webkit-keyframes nav3 {
+    0% {
+      -webkit-transform: translateY(0px) rotate(0deg); }
+    50% {
+      -webkit-transform: translateY(-9px) rotate(0deg); }
+    100% {
+      -webkit-transform: translateY(-9px) rotate(135deg); } }
+  @keyframes nav3{
+    0% {
+      transform: translateY(0px) rotate(0deg); }
+    50% {
+      transform: translateY(-9px) rotate(0deg); }
+    100% {
+      transform: translateY(-9px) rotate(135deg); } 
+    }
+/*********End Mobile Toggler Animation********/
+
+/*----------- Our  Love Story---------*/
+#OurLoveStory,#Venue{
+    background-image: url("../images/bodybg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+.heaert {
+    position: absolute;
+    width: 25px;
+    top: -22px;
+    left: -12px;
+}
+.heaert.heart2{
+top:auto;
+bottom:-22px;
+}
+.loveStoryCenter{
+    background-color: #DC5B81;
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+    position: absolute;
+    padding: 17px;
+    left: 32%;
+    top: 33%;
+    display: none;
+
+}
+.loveStoryCenter img{
+margin: auto
+}
+.titleImg{
+    width:100%;
+}
+.OurLoveStorySection h4{
+  font-size:1.875em;
+}
+.OurLoveStorySection span{
+    margin-bottom: 24px;
+    color:#DC5B81;
+    display: block;
+}
+.loveImg{
+    border:10px solid #DC5B81
+}
+.OurLoveStorySection p{
+    font-size: 1.375em;
+    margin-top:24px;
+}
+.marginTop{
+    margin-top:65px;
+}
+.verticalLine {
+    position: absolute;
+    border-left: 1px dashed #DC5B81;
+    left: 50%;
+    top: 245px;
+    height: 90%;}
+/*---------------- .Bridal sction ---------------*/
+.BridalImg{
+    width:100%;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.BridalImg:hover img{
+    transform: scale(1.1);
+    transition: all .5s;
+}
+.BridalImg:hover{
+    box-shadow: 0px 5px 25px rgba(0, 0, 0, 0.3);
+}
+.BridalImg img{
+    transition: all .5s;
+    max-width: 255px;
+    max-height: 255px;
+}
+
+.BridalPartyItem h6{
+    font-size:1.250em;
+    margin-top:24px;
+    margin-bottom:5px;
+}
+.BridalPartyItem span{
+    color:#DC5B81;
+    font-family:"Agatha";
+    font-size:2.250em;
+
+}
+.carImg{
+    width:200px;
+    margin:auto;
+    margin-top:50px; 
+}
+.EventsDesc{
+    width:100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.eventborder{
+    width:100%;
+    position: absolute;
+    top:0;
+    left:0;
+    z-index: -1;
+
+}
+.EventsDesc a{
+    font-size:1.553em;
+    color:#DC5B81;
+    margin:0;
+    &:hover{
+        transition: .3s;
+        color: #A5A5A5;
+    }
+
+}
+.EventsDesc span{
+    font-size:1.085em;
+    display: block;
+}
+.EventsDesc p{
+    font-size:1.085em;
+    margin-top:15px;
+}
+.EventDescCont
+{
+    margin-top: 104px;
+    margin-left: 44px;
+}
+.marginTopEvent{
+    margin-top:80px;
+}
+/*---------------- Venue sction ---------------*/
+.VenueDesc span{
+    display: block;
+    font-size:1.150em;
+    color:#3E7B8D;
+    margin-bottom: 10px;
+}
+.VenueDesc p{
+    font-size:1.150em;
+    margin-bottom: 19px;
+  font-size: 1.850em;
+
+}
+.VenueDesc p:last-child{
+    margin-bottom: 0;;
+}
+#Venue .sectionTitle{
+    margin-bottom:50px;
+}
+.galleryImg1{
+    height:300px;
+   
+    overflow: hidden;
+}
+.galleryImg img{
+    height:100%;
+}
+.marginbottom{
+    margin-bottom:30px;
+}
+.galleryImg2{
+height:600px;
+}
+.galleryImg{
+    position: relative;
+}
+.galleryImg:hover::before{
+    opacity: 1;
+    transition: all .5s;;
+}
+.galleryImg:before{
+    content: "";
+    position: absolute;
+    bottom:0;
+    background-image: linear-gradient(180deg, rgba(18, 18, 18, 0) 0%, rgba(18, 18, 18, 1) 100%);
+    z-index: 1;
+    width:100%;
+    height: 100%;
+    opacity: 0;
+    transition: all .5s;;
+}
+.galleryImg p{
+    position: absolute;
+    bottom:-30px;
+    text-align: center;
+    width:100%;
+    z-index: 2;
+    color:#DC5B81;
+    font-size:1.125em;
+    opacity: 0;
+    transition: all .5s;;
+}
+.galleryImg:hover p{
+    opacity: 1;
+    bottom:0;
+    transition: all .5s;;
+}
+#gallery{
+    padding-bottom: 0;;
+}
+
+/*----------------- RSVP -----------------------*/
+.FormBox{
+    padding:50px 30px;
+    background-color: white;
+    box-shadow: 0px 0px 26px rgba(0, 0, 0, 0.16);
+    margin-top:150px;
+    position: relative;
+}
+#join{
+    padding-bottom:250px;
+}
+.FormBox form{
+    text-align: center;
+}
+.FormBox h5{
+    color: #DC5B81;
+    text-align: center;
+}
+.sendBtn{
+    background-color: #DC5B81;
+    height:60px;
+    color:white;
+    border:1px solid #DC5B81;
+    width:120px;
+    text-align: center;
+    margin:auto;
+    margin-top:40px;
+}
+.sendBtn:hover{
+background-color: white;
+color:#DC5B81;
+}
+.FormBox .form-group{
+    width:47%;
+    margin-right:20px;
+    display: inline-block;
+    margin-top:30px;
+    margin-bottom: 0;;
+}
+.FormBox .form-group.noMargin{
+    margin-right:0;
+}
+.FormBox .form-control{
+    border: 1px solid rgba(153, 153, 153, 1);
+    height:60px;
+    border-radius: 0;;
+}
+.FormBox .form-control::placeholder{
+    color:rgba(184, 184, 184, 1);
+    font-size: 17px;
+}
+.formFlower{
+    position: absolute;
+    left:0;
+    width:100%;
+    top:-134px;
+}
+.formFlower.formFlower2{
+    position: absolute;
+    left:0;
+    width:100%;
+    top:auto;
+    bottom:-134px;
+}
+/*-----------------Footer ------------*/
+#footer{
+background-image:url("../images/headet.png");
+background-repeat: no-repeat;
+background-size: cover;
+position: relative;
+width: 100%;
+
+}
+#footer::before{
+    position: absolute;
+    content: "";
+    width:100%;
+    height:100%;
+    background: rgba(18, 18, 18, 0.43) 0% 0% no-repeat padding-box;
+}
+.footerText{
+    margin-top: 70px;
+    margin-bottom: 150px;;
+}
+.footerText h4{
+    font-size:5.625em;
+    color:white;
+    font-family:"Agatha";
+}
+.footerText p{
+font-size:17px;
+color:white;
+}
+
+@media(max-width:767px){
+    .headerImg{
+height:auto;
+padding-top:50px;
+    }
+    header{
+        padding:0px 15px;
+    }
+    section {
+        padding-top: 50px;
+        padding-bottom: 70px;
+    }
+    .marginTop{
+        margin-top:20px;
+    }
+    .sectionTitle{
+margin-bottom:30px;
+    }
+    .OurLoveStorySection h4,.OurLoveStorySection span{
+        text-align: left !important;;
+    }
+    .eventborder{
+        height:350px;
+    }
+    .eventborder img{
+        height: 100%;;
+    }
+    .marginTopEvent{
+margin-top:20px;
+    }
+    .EventDescCont h4.text-right ,.EventDescCont span.text-right{
+        text-align: left !important;
+    }
+    .EventDescCont {
+        margin-top: 92px;
+        margin-left: 32px;}
+.FormBox .form-group{
+    width:100%;
+    margin-right: 0;
+}
+.formFlower.formFlower2{
+    bottom:-90px;
+}
+.formFlower{
+    top:-90px;
+}
+#join {
+    padding-bottom: 250px;
+}
+.scrollNav{
+    padding:0 15px;
+}
+.galleryImg{
+    margin-top:20px;
+}
+#footer{
+    padding-bottom:50px;
+}
+}
+@media(min-width:768px)and (max-width:1023px){
+    .headerImg{
+        padding-top:100px;
+        height:auto
+    }
+    .marginTop{
+        margin-top:20px;
+    }
+    .EventDescCont{
+        margin-top:20px;
+        margin-bottom:30px;
+        position: absolute;
+        top: 140px;
+        left: 78px;
+        max-width: 68%;
+    }
+  .eventborder{
+      position: relative;
+  }
+  .EventDescCont h4 ,.EventDescCont span{
+      text-align: left !important;
+  }
+  #Venue .sectionTitle{
+      margin-bottom:20px;
+  }
+  .VenueDesc p{
+      font-size:14px;
+  }
+  .galleryImg{
+      margin-top:20px;
+  }
+  .FormBox .form-group{
+      width:100%;
+      margin-right:0;
+  }
+ .formFlower.formFlower2{
+     bottom:-112px;
+ }
+ .formFlower{
+    top:-112px;
+}
+#footer{
+    padding-bottom:50px;
+}
+}
+
+@media(min-width:1024px)and (max-width:1250px){
+    .nav-item{
+        padding-left:10px;
+        padding-right: 10px;;
+    }
+    .formFlower {
+    
+        top: -111px;
+    }
+    .formFlower.formFlower2{
+        bottom: -111px;;
+    }
+    .FormBox .form-group{
+    width:100%;
+    margin-right:0;
+    }
+    .EventDescCont {
+        margin-top: 71px;}
+.row.marginTopEvent .EventDescCont{
+    margin-left: 50;;
+    padding-right:20px;
+}
+.EventDescCont {
+    margin-top: 70px;
+    margin-left: 39px;
+}
+}
+//OUR BRIDAL PAGE
+.more-btn{
+    button{
+        background-color: #DC5B81;
+        color: #ffffff;
+        font-size: 16px;
+        border: 1px solid #DC5B81;
+        outline: none;
+        height: 40px;
+        width: 130px;
+        text-align: center;
+        display: block;
+        margin: auto;
+        &:hover{
+            color: #DC5B81;
+            background-color: #ffffff;
+            transition: .3s;
+        }
+    }
+}
+//OUR STORY PAGE
+#gift{
+    background-image: url('../images/About/Group\ 811.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 200px;
+    padding-bottom: 200px;
+    .head{
+        color: #ffffff;
+        font-weight: bold;
+        font-size: 50px;
+        line-height: 55px;
+        margin-bottom: 0px;
+    }
+    .para{
+        color: #ffffff;
+        font-size: 26px;
+    }
+    a{
+        width: 100px;
+        height: 45px;
+        color: #fff;
+        font-size: 16px;
+        background-color: #DC5B81;
+        border: 1px solid #DC5B81;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        &:hover{
+            transition: .3s;
+            background-color: #ffffff;
+            color: #DC5B81;
+        }
+    }
+}
+//OUR BIRDAL PAGE
+#hotels{
+    .head{
+        font-size: 26px;
+        line-height: 30px;
+        color: #DC5B81;
+        margin-bottom: 8px;
+        margin-top: 5px;
+    }
+    .para{
+        font-size: 16px;
+        color: #121212;
+        line-height: 21px;
+    }
+    .location{
+        font-size: 16px;
+        color: #121212;
+        line-height: 21px;
+    }
+}
+//EVENTS DETAILS PAGE
+#events_details{
+    .info{
+        p{
+            display: inline;
+            font-size: 16px;
+            color: #A5A5A5;
+            margin-right: 20px;
+        }
+    }
+    .head{
+        color: #DC5B81;
+        font-size: 28px;
+        line-height: 34px;
+    }
+    .para{
+        font-size: 16px;
+        margin-top: 25px;
+        margin-bottom: 0px;
+        color: #121212;
+    }
+    .citat{
+        background-color: #E8E8E8;
+        padding: 15px 15px;
+        margin-top: 30px;
+        margin-bottom: 0px;
+        .citat-para{
+            font-size: 20px;
+            color: #5D5D5D;
+            line-height: 25px;
+        }
+        .citat-name{
+            font-size: 16px;
+            color: #5D5D5D;
+            line-height: 21px;
+            margin-bottom: -5px;
+        }
+        .quotes{
+            display: flex;
+            justify-content: flex-end;
+            
+            img{
+                width: 30px;
+            }
+        }
+    }
+    .share-social-links{
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        padding: 35px 0px;
+        border-bottom: 1px solid #A5A5A5;
+        button{
+            background-color: transparent;
+            border: none;
+            outline: none;
+            color: #5D5D5D;
+            font-size: 16px;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            margin-right: 25px;
+            &:hover{
+                transition: .3s;
+                color: #A5A5A5;
+            }
+            img{
+                width: 20px;
+            }
+        }
+        .social-links{
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            a{
+                border-radius: 50%;
+                background-color: #E8E8E8;
+                color: #121212;
+                font-size: 16px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 30px;
+                height: 30px;
+            }
+        }
+        
+    }
+    .next-prev-btns{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 10px;
+        flex-wrap: wrap;
+        margin-top: 35px;
+        button{
+            background-color: transparent;
+            border: none;
+            outline: none;
+            color: #5D5D5D;
+            font-size: 16px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            i{
+                font-size: 14px;
+            }
+            &:hover{
+                transition: .3s;
+                color: #A5A5A5;
+            }
+        }
+    }
+    .instagram-widget{
+        .head{
+            color: #121212;
+            font-size: 28px;
+            margin-bottom: 35px;
+        }
+        .instagram-images{
+            a{
+                display: inline-flex;
+                margin-right: 10px;
+                margin-bottom: 15px;
+                img{
+                    width: 70px;
+                    height: 70px;
+                }
+            }
+        }
+    }
+    .tags-widget{
+        margin-top: 40px;
+        .head{
+            color: #121212;
+            font-size: 28px;
+            margin-bottom: 35px;
+        }
+        a{
+            display: inline-flex;
+            padding: 5px 15px;
+            background-color: #E8E8E8;
+            font-size: 16px;
+            color: #5D5D5D;
+            margin-right: 10px;
+            margin-bottom: 15px;
+        }
+    }
+    .search-widget{
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        padding: 5px 15px;
+        background-color: #E8E8E8;
+        margin-top: 40px;
+        img{
+            width: 20px;
+        }
+        input{
+            width: 90%;
+            border: none;
+            background-color: transparent;
+            outline: none;
+            font-size: 16px;
+            color: #5D5D5D;
+            &::placeholder{
+                color: #5D5D5D;
+                opacity: 1;
+            }
+        }
+    }
+}
+//VENUE PAGE
+#next-events{
+    .next-events-card{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        .main-img{
+            img{
+                max-width: 200px;
+            }
+        }
+        .head{
+            font-size: 28px;
+            color: #121212;
+            line-height: 33px;
+            margin-bottom: 0px;
+        }
+        .date{
+            font-size: 16px;
+            line-height: 21px;
+            color: #A5A5A5;
+        }
+        .clock{
+            font-size: 16px;
+            color: #DC5B81;
+            line-height: 21px;
+            margin-bottom: 5px;
+            margin-top: 20px;
+        }
+        .address{
+            font-size: 16px;
+            line-height: 21px;
+            color: #121212;
+        }
+    }
+}
